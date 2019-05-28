@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Тинькофф Прокат</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
+  <link rel="stylesheet" href="src/styles/maket.css">
+  <link rel="stylesheet" href="src/styles/search.css">
+  <link rel="stylesheet" href="src/styles/filmbox.css">
+  <link rel="stylesheet" href="src/styles/loader.css">
+  <link href="http://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+
+<body>
+  <div id="loader">
+    <div class="page"><span class="anim"></span><br>Loading...<br></div>
+  </div>
+
+  <header>
+    <div class="logo">
+      <img src="src/img/logo—tp.png" alt="Логотип">
+    </div>
+  </header>
+  <main>
+    <form class="search">
+      <input type="search" class="search__input" name="search" placeholder="Поиск фильмов по жанрам и актерам"
+        autocomplete="off">
+      <div class="search__history"></div>
+    </form>
+
+    <section class="filmbox">
+      <div class="filmbox__subtitle"></div>
+      <div class="filmbox__card"></div>
+    </section>
+  </main>
+  <footer class="copyright">
+    ©&nbsp<current-year>2019</current-year>&nbspТинькофф Прокат
+  </footer>
+  <script src="src/index.js" type="module"></script>
+  <<script src="src/preLoader.js" type="module">
+  </script>
+
+</body>
+
+</html>

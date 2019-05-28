@@ -1,0 +1,121 @@
+.search__input {
+  display: block;
+  width: 90%;
+  min-width: 150px;
+  height: 74px;
+  margin: 0 auto;
+  padding-left: 80px;
+  border: none;
+  outline: none;
+  border-bottom: 2px solid #FFFFFF;
+  border-radius: 2px;
+  background: url('../img/search.png') no-repeat 20px 11px;
+  color: white;
+  cursor: pointer;
+  caret-color: white;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 36px;
+  font-size: 24px;
+}
+
+/*Chrome*/
+.search__input input::-webkit-input-placeholder {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 36px;
+  font-size: 24px;
+}
+
+/*Firefox 19+*/
+.search__input input::-moz-placeholder {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 36px;
+  font-size: 24px;
+}
+
+/*Firefox 18-*/
+.search__input input:-moz-placeholder {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 36px;
+  font-size: 24px;
+}
+
+/*Microsoft Edge*/
+.search__input input::-ms-input-placeholder {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 36px;
+  font-size: 24px;
+}
+
+.search:focus {
+  width: 1280px;
+  border-bottom: 2px solid #FDCE25;;
+  border-radius: 2px;
+  padding-left: 60px;
+  background: url('../img/search.png') no-repeat 8px 11px;
+}
+
+.search__input::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  content: url('../img/esc.png');
+  margin-right: 25px;
+  cursor: pointer;
+}
+
+.search__input::-webkit-search-cancel-button:hover {
+  content: url('../img/esc-white.png');
+}
+
+.search__history {
+  width: 90%;
+  height: 88px;
+  margin-left: 5%;
+  overflow: hidden;
+}
+
+.search__item {
+  display: inline-block;
+  margin-right: 4px;
+  margin-top: 8px;
+  padding: 6px 16px 6px 16px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 4px;
+  line-height: 24px;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.8);
+  text-decoration: none;
+}
+
+.search__item:hover { 
+  background: white; 
+  cursor: pointer;
+}
+
+.search--scroll {
+  position: fixed;
+  justify-content: normal;
+  top: 0;
+  width: 100%;
+  left: 0;
+  z-index: 10;
+}
+
+.search--scroll .search__input {
+  width: 100%;
+  margin-top: 0;
+  background-color: rgba(28, 28, 28, 0.8);
+  backdrop-filter: blur(4px);
+}
+
+.search--scroll .search__history {
+  margin-left: 8px;
+}
